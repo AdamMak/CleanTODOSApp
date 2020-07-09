@@ -3,17 +3,88 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		6AEA4AF524B4CC7C002A6859 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4AF424B4CC7C002A6859 /* AppDelegate.swift */; };
 		6AEA4AF724B4CC7C002A6859 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4AF624B4CC7C002A6859 /* SceneDelegate.swift */; };
-		6AEA4AF924B4CC7C002A6859 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4AF824B4CC7C002A6859 /* ViewController.swift */; };
-		6AEA4AFC24B4CC7C002A6859 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AEA4AFA24B4CC7C002A6859 /* Main.storyboard */; };
 		6AEA4AFE24B4CC7D002A6859 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AEA4AFD24B4CC7D002A6859 /* Assets.xcassets */; };
 		6AEA4B0124B4CC7D002A6859 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AEA4AFF24B4CC7D002A6859 /* LaunchScreen.storyboard */; };
-		6AEA4B0C24B4CC7E002A6859 /* TODOAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4B0B24B4CC7E002A6859 /* TODOAppTests.swift */; };
+		6AEA4B1924B4D05F002A6859 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4B1824B4D05F002A6859 /* Coordinator.swift */; };
+		6AEA4B1C24B4D06F002A6859 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4B1B24B4D06F002A6859 /* Presentable.swift */; };
+		6AEA4B2A24B4E8BC002A6859 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4B2924B4E8BC002A6859 /* NetworkService.swift */; };
+		6AEA4B2C24B4E8CA002A6859 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4B2B24B4E8CA002A6859 /* APIRequest.swift */; };
+		6AEA4B2E24B4E8D8002A6859 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4B2D24B4E8D8002A6859 /* NetworkError.swift */; };
+		6AEA4B3024B4E8E8002A6859 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4B2F24B4E8E8002A6859 /* HTTPMethod.swift */; };
+		6AEA4B3224B4E8F6002A6859 /* URLRequest+BuildHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4B3124B4E8F6002A6859 /* URLRequest+BuildHelpers.swift */; };
+		6AEA4B3424B4E903002A6859 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4B3324B4E903002A6859 /* APIManager.swift */; };
+		6AEA4B3A24B4E93A002A6859 /* MappableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4B3924B4E93A002A6859 /* MappableViewModel.swift */; };
+		6AEA4B3C24B4E949002A6859 /* BindableUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4B3B24B4E949002A6859 /* BindableUI.swift */; };
+		6AEA4B3E24B4E958002A6859 /* UITableView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4B3D24B4E958002A6859 /* UITableView+Helpers.swift */; };
+		6AEA4B4024B4E965002A6859 /* UIView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4B3F24B4E965002A6859 /* UIView+Helpers.swift */; };
+		6AEA4B4324B4E982002A6859 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4B4224B4E982002A6859 /* Constants.swift */; };
+		6AEA4B7824B5DB6B002A6859 /* TODOListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4B7424B5DB6B002A6859 /* TODOListCoordinator.swift */; };
+		6AEA4B7924B5DB6B002A6859 /* TODOListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4B7524B5DB6B002A6859 /* TODOListViewController.swift */; };
+		6AEA4B7A24B5DB6B002A6859 /* TODOListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4B7624B5DB6B002A6859 /* TODOListViewModel.swift */; };
+		6AEA4B7B24B5DB6B002A6859 /* TODOListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AEA4B7724B5DB6B002A6859 /* TODOListViewController.xib */; };
+		6AEA4B7E24B5DB85002A6859 /* TODORepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4B7D24B5DB85002A6859 /* TODORepository.swift */; };
+		6AEA4B8024B5DB8B002A6859 /* TODO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4B7F24B5DB8B002A6859 /* TODO.swift */; };
+		6AEA4B8224B5DBDC002A6859 /* GetTODOUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4B8124B5DBDC002A6859 /* GetTODOUseCase.swift */; };
+		6AEA4B8424B5DC29002A6859 /* TODOWebRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4B8324B5DC29002A6859 /* TODOWebRepository.swift */; };
+		6AEA4B8624B5DC5A002A6859 /* TODORequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4B8524B5DC5A002A6859 /* TODORequest.swift */; };
+		6AEA4B8D24B5DE13002A6859 /* NibLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4B8C24B5DE13002A6859 /* NibLoader.swift */; };
+		6AEA4B9E24B5E3D5002A6859 /* UserListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4B9A24B5E3D5002A6859 /* UserListCoordinator.swift */; };
+		6AEA4B9F24B5E3D5002A6859 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4B9B24B5E3D5002A6859 /* UserListViewController.swift */; };
+		6AEA4BA024B5E3D5002A6859 /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4B9C24B5E3D5002A6859 /* UserListViewModel.swift */; };
+		6AEA4BA124B5E3D5002A6859 /* UserListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AEA4B9D24B5E3D5002A6859 /* UserListViewController.xib */; };
+		6AEA4BA424B5E461002A6859 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4BA324B5E461002A6859 /* User.swift */; };
+		6AEA4BA624B5E491002A6859 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4BA524B5E491002A6859 /* UserRepository.swift */; };
+		6AEA4BA824B5E4AA002A6859 /* GetUsersUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4BA724B5E4AA002A6859 /* GetUsersUseCase.swift */; };
+		6AEA4BAA24B5E4F0002A6859 /* UsersRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4BA924B5E4F0002A6859 /* UsersRequest.swift */; };
+		6AEA4BAC24B5E51A002A6859 /* UsersWebRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4BAB24B5E51A002A6859 /* UsersWebRepository.swift */; };
+		6AEA4BAE24B5E6A9002A6859 /* UserCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4BAD24B5E6A8002A6859 /* UserCellViewModel.swift */; };
+		6AEA4BB224B5EE80002A6859 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4BB024B5EE80002A6859 /* UserTableViewCell.swift */; };
+		6AEA4BB324B5EE80002A6859 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AEA4BB124B5EE80002A6859 /* UserTableViewCell.xib */; };
+		6AEA4BC124B60D67002A6859 /* TODOTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4BBF24B60D67002A6859 /* TODOTableViewCell.swift */; };
+		6AEA4BC224B60D67002A6859 /* TODOTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AEA4BC024B60D67002A6859 /* TODOTableViewCell.xib */; };
+		6AEA4BC424B60D7A002A6859 /* TODOCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4BC324B60D7A002A6859 /* TODOCellViewModel.swift */; };
+		6AEA4BC724B6713C002A6859 /* TODOAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4BC624B6713C002A6859 /* TODOAPI.swift */; };
+		6AEA4BCA24B6714F002A6859 /* TODODTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4BC924B6714F002A6859 /* TODODTO.swift */; };
+		6AEA4BCD24B7079E002A6859 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4BCC24B7079E002A6859 /* Mapper.swift */; };
+		6AEA4BD024B707BF002A6859 /* TODOMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4BCF24B707BF002A6859 /* TODOMapper.swift */; };
+		6AEA4BD224B70A46002A6859 /* UserDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4BD124B70A46002A6859 /* UserDTO.swift */; };
+		6AEA4BD424B70D5D002A6859 /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4BD324B70D5D002A6859 /* UserAPI.swift */; };
+		6AEA4BD624B70DD3002A6859 /* UserMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4BD524B70DD3002A6859 /* UserMapper.swift */; };
+		6AEA4BD924B716FA002A6859 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = 6AEA4BD824B716FA002A6859 /* Nimble */; };
+		6AEA4BDC24B71716002A6859 /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = 6AEA4BDB24B71716002A6859 /* Quick */; };
+		6AEA4BE424B7177B002A6859 /* GetUsersUseCaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4BE324B7177B002A6859 /* GetUsersUseCaseSpec.swift */; };
+		6AEA4BE724B717BF002A6859 /* ModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4BE624B717BF002A6859 /* ModelFactory.swift */; };
+		6AEA4BE924B71A2D002A6859 /* MockTODORepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4BE824B71A2D002A6859 /* MockTODORepository.swift */; };
+		6AEA4BEB24B720B1002A6859 /* GetTODOUseCaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4BEA24B720B1002A6859 /* GetTODOUseCaseSpec.swift */; };
+		6AEA4BED24B726E2002A6859 /* CurrentValueSubject+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4BEC24B726E2002A6859 /* CurrentValueSubject+Helpers.swift */; };
+		6AEA4BEF24B728E5002A6859 /* TODOWebRepositorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4BEE24B728E5002A6859 /* TODOWebRepositorySpec.swift */; };
+		6AEA4BF224B729A0002A6859 /* MockUsersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4BF124B729A0002A6859 /* MockUsersRepository.swift */; };
+		6AEA4BF424B729C5002A6859 /* MockTODOAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4BF324B729C5002A6859 /* MockTODOAPI.swift */; };
+		6AEA4BF624B72A0E002A6859 /* MockUserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4BF524B72A0E002A6859 /* MockUserAPI.swift */; };
+		6AEA4BF824B72B09002A6859 /* UserWebRepositorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4BF724B72B09002A6859 /* UserWebRepositorySpec.swift */; };
+		6AEA4C0024B72DE3002A6859 /* TODOMapperSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4BFF24B72DE3002A6859 /* TODOMapperSpec.swift */; };
+		6AEA4C0224B72DEB002A6859 /* UserMapperSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4C0124B72DEB002A6859 /* UserMapperSpec.swift */; };
+		6AEA4C0924B73596002A6859 /* UserListViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4C0824B73596002A6859 /* UserListViewModelSpec.swift */; };
+		6AEA4C0C24B73F96002A6859 /* TestingAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4C0B24B73F96002A6859 /* TestingAppDelegate.swift */; };
+		6AEA4C0E24B73FA1002A6859 /* TestingRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4C0D24B73FA1002A6859 /* TestingRootViewController.swift */; };
+		6AEA4C1024B73FAE002A6859 /* TestingSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4C0F24B73FAE002A6859 /* TestingSceneDelegate.swift */; };
+		6AEA4C1224B73FD0002A6859 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4C1124B73FD0002A6859 /* main.swift */; };
+		6AEA4C1624B75EBF002A6859 /* AnyPublisher+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4C1524B75EBF002A6859 /* AnyPublisher+Helpers.swift */; };
+		6AEA4C1F24B762C6002A6859 /* TODOListViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4C1E24B762C6002A6859 /* TODOListViewModelSpec.swift */; };
+		6AEA4C2124B76422002A6859 /* TODOCellViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4C2024B76422002A6859 /* TODOCellViewModelSpec.swift */; };
+		6AEA4C2324B765A1002A6859 /* UserCellViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4C2224B765A1002A6859 /* UserCellViewModelSpec.swift */; };
+		6AEA4C2524B7661A002A6859 /* UserListViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4C2424B7661A002A6859 /* UserListViewControllerSpec.swift */; };
+		6AEA4C2924B769D8002A6859 /* TODOListViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4C2824B769D8002A6859 /* TODOListViewControllerSpec.swift */; };
+		6AEA4C2E24B76B8D002A6859 /* UserListCoordinatorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4C2D24B76B8D002A6859 /* UserListCoordinatorSpec.swift */; };
+		6AEA4C3024B76BE1002A6859 /* TODOListCoordinatorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4C2F24B76BE1002A6859 /* TODOListCoordinatorSpec.swift */; };
+		6AEA4C3324B76C60002A6859 /* NetworkErrorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4C3224B76C60002A6859 /* NetworkErrorSpec.swift */; };
+		6AEA4C3524B78507002A6859 /* UIViewController+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA4C3424B78507002A6859 /* UIViewController+Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,14 +101,83 @@
 		6AEA4AF124B4CC7C002A6859 /* TODOApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TODOApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AEA4AF424B4CC7C002A6859 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6AEA4AF624B4CC7C002A6859 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6AEA4AF824B4CC7C002A6859 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6AEA4AFB24B4CC7C002A6859 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6AEA4AFD24B4CC7D002A6859 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6AEA4B0024B4CC7D002A6859 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6AEA4B0224B4CC7D002A6859 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6AEA4B0724B4CC7E002A6859 /* TODOAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TODOAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6AEA4B0B24B4CC7E002A6859 /* TODOAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODOAppTests.swift; sourceTree = "<group>"; };
 		6AEA4B0D24B4CC7E002A6859 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AEA4B1824B4D05F002A6859 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		6AEA4B1B24B4D06F002A6859 /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
+		6AEA4B2924B4E8BC002A6859 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		6AEA4B2B24B4E8CA002A6859 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		6AEA4B2D24B4E8D8002A6859 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		6AEA4B2F24B4E8E8002A6859 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		6AEA4B3124B4E8F6002A6859 /* URLRequest+BuildHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+BuildHelpers.swift"; sourceTree = "<group>"; };
+		6AEA4B3324B4E903002A6859 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		6AEA4B3924B4E93A002A6859 /* MappableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MappableViewModel.swift; sourceTree = "<group>"; };
+		6AEA4B3B24B4E949002A6859 /* BindableUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindableUI.swift; sourceTree = "<group>"; };
+		6AEA4B3D24B4E958002A6859 /* UITableView+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Helpers.swift"; sourceTree = "<group>"; };
+		6AEA4B3F24B4E965002A6859 /* UIView+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Helpers.swift"; sourceTree = "<group>"; };
+		6AEA4B4224B4E982002A6859 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6AEA4B7424B5DB6B002A6859 /* TODOListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODOListCoordinator.swift; sourceTree = "<group>"; };
+		6AEA4B7524B5DB6B002A6859 /* TODOListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODOListViewController.swift; sourceTree = "<group>"; };
+		6AEA4B7624B5DB6B002A6859 /* TODOListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODOListViewModel.swift; sourceTree = "<group>"; };
+		6AEA4B7724B5DB6B002A6859 /* TODOListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TODOListViewController.xib; sourceTree = "<group>"; };
+		6AEA4B7D24B5DB85002A6859 /* TODORepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODORepository.swift; sourceTree = "<group>"; };
+		6AEA4B7F24B5DB8B002A6859 /* TODO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODO.swift; sourceTree = "<group>"; };
+		6AEA4B8124B5DBDC002A6859 /* GetTODOUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTODOUseCase.swift; sourceTree = "<group>"; };
+		6AEA4B8324B5DC29002A6859 /* TODOWebRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODOWebRepository.swift; sourceTree = "<group>"; };
+		6AEA4B8524B5DC5A002A6859 /* TODORequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODORequest.swift; sourceTree = "<group>"; };
+		6AEA4B8C24B5DE13002A6859 /* NibLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoader.swift; sourceTree = "<group>"; };
+		6AEA4B9A24B5E3D5002A6859 /* UserListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListCoordinator.swift; sourceTree = "<group>"; };
+		6AEA4B9B24B5E3D5002A6859 /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
+		6AEA4B9C24B5E3D5002A6859 /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
+		6AEA4B9D24B5E3D5002A6859 /* UserListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserListViewController.xib; sourceTree = "<group>"; };
+		6AEA4BA324B5E461002A6859 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		6AEA4BA524B5E491002A6859 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		6AEA4BA724B5E4AA002A6859 /* GetUsersUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUsersUseCase.swift; sourceTree = "<group>"; };
+		6AEA4BA924B5E4F0002A6859 /* UsersRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersRequest.swift; sourceTree = "<group>"; };
+		6AEA4BAB24B5E51A002A6859 /* UsersWebRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersWebRepository.swift; sourceTree = "<group>"; };
+		6AEA4BAD24B5E6A8002A6859 /* UserCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellViewModel.swift; sourceTree = "<group>"; };
+		6AEA4BB024B5EE80002A6859 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		6AEA4BB124B5EE80002A6859 /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
+		6AEA4BBF24B60D67002A6859 /* TODOTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODOTableViewCell.swift; sourceTree = "<group>"; };
+		6AEA4BC024B60D67002A6859 /* TODOTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TODOTableViewCell.xib; sourceTree = "<group>"; };
+		6AEA4BC324B60D7A002A6859 /* TODOCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODOCellViewModel.swift; sourceTree = "<group>"; };
+		6AEA4BC624B6713C002A6859 /* TODOAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODOAPI.swift; sourceTree = "<group>"; };
+		6AEA4BC924B6714F002A6859 /* TODODTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODODTO.swift; sourceTree = "<group>"; };
+		6AEA4BCC24B7079E002A6859 /* Mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
+		6AEA4BCF24B707BF002A6859 /* TODOMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODOMapper.swift; sourceTree = "<group>"; };
+		6AEA4BD124B70A46002A6859 /* UserDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDTO.swift; sourceTree = "<group>"; };
+		6AEA4BD324B70D5D002A6859 /* UserAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
+		6AEA4BD524B70DD3002A6859 /* UserMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMapper.swift; sourceTree = "<group>"; };
+		6AEA4BE324B7177B002A6859 /* GetUsersUseCaseSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUsersUseCaseSpec.swift; sourceTree = "<group>"; };
+		6AEA4BE624B717BF002A6859 /* ModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelFactory.swift; sourceTree = "<group>"; };
+		6AEA4BE824B71A2D002A6859 /* MockTODORepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTODORepository.swift; sourceTree = "<group>"; };
+		6AEA4BEA24B720B1002A6859 /* GetTODOUseCaseSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTODOUseCaseSpec.swift; sourceTree = "<group>"; };
+		6AEA4BEC24B726E2002A6859 /* CurrentValueSubject+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrentValueSubject+Helpers.swift"; sourceTree = "<group>"; };
+		6AEA4BEE24B728E5002A6859 /* TODOWebRepositorySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODOWebRepositorySpec.swift; sourceTree = "<group>"; };
+		6AEA4BF124B729A0002A6859 /* MockUsersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUsersRepository.swift; sourceTree = "<group>"; };
+		6AEA4BF324B729C5002A6859 /* MockTODOAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTODOAPI.swift; sourceTree = "<group>"; };
+		6AEA4BF524B72A0E002A6859 /* MockUserAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserAPI.swift; sourceTree = "<group>"; };
+		6AEA4BF724B72B09002A6859 /* UserWebRepositorySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserWebRepositorySpec.swift; sourceTree = "<group>"; };
+		6AEA4BFF24B72DE3002A6859 /* TODOMapperSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODOMapperSpec.swift; sourceTree = "<group>"; };
+		6AEA4C0124B72DEB002A6859 /* UserMapperSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMapperSpec.swift; sourceTree = "<group>"; };
+		6AEA4C0824B73596002A6859 /* UserListViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModelSpec.swift; sourceTree = "<group>"; };
+		6AEA4C0B24B73F96002A6859 /* TestingAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingAppDelegate.swift; sourceTree = "<group>"; };
+		6AEA4C0D24B73FA1002A6859 /* TestingRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingRootViewController.swift; sourceTree = "<group>"; };
+		6AEA4C0F24B73FAE002A6859 /* TestingSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingSceneDelegate.swift; sourceTree = "<group>"; };
+		6AEA4C1124B73FD0002A6859 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		6AEA4C1524B75EBF002A6859 /* AnyPublisher+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyPublisher+Helpers.swift"; sourceTree = "<group>"; };
+		6AEA4C1E24B762C6002A6859 /* TODOListViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODOListViewModelSpec.swift; sourceTree = "<group>"; };
+		6AEA4C2024B76422002A6859 /* TODOCellViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODOCellViewModelSpec.swift; sourceTree = "<group>"; };
+		6AEA4C2224B765A1002A6859 /* UserCellViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellViewModelSpec.swift; sourceTree = "<group>"; };
+		6AEA4C2424B7661A002A6859 /* UserListViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewControllerSpec.swift; sourceTree = "<group>"; };
+		6AEA4C2824B769D8002A6859 /* TODOListViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODOListViewControllerSpec.swift; sourceTree = "<group>"; };
+		6AEA4C2D24B76B8D002A6859 /* UserListCoordinatorSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListCoordinatorSpec.swift; sourceTree = "<group>"; };
+		6AEA4C2F24B76BE1002A6859 /* TODOListCoordinatorSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODOListCoordinatorSpec.swift; sourceTree = "<group>"; };
+		6AEA4C3224B76C60002A6859 /* NetworkErrorSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorSpec.swift; sourceTree = "<group>"; };
+		6AEA4C3424B78507002A6859 /* UIViewController+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Helpers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +192,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AEA4BDC24B71716002A6859 /* Quick in Frameworks */,
+				6AEA4BD924B716FA002A6859 /* Nimble in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,13 +221,12 @@
 		6AEA4AF324B4CC7C002A6859 /* TODOApp */ = {
 			isa = PBXGroup;
 			children = (
-				6AEA4AF424B4CC7C002A6859 /* AppDelegate.swift */,
-				6AEA4AF624B4CC7C002A6859 /* SceneDelegate.swift */,
-				6AEA4AF824B4CC7C002A6859 /* ViewController.swift */,
-				6AEA4AFA24B4CC7C002A6859 /* Main.storyboard */,
-				6AEA4AFD24B4CC7D002A6859 /* Assets.xcassets */,
-				6AEA4AFF24B4CC7D002A6859 /* LaunchScreen.storyboard */,
+				6AEA4C1324B74EAB002A6859 /* Resources */,
+				6AEA4B1D24B4D08D002A6859 /* AppDelegate */,
+				6AEA4B1624B4CD30002A6859 /* Core */,
+				6AEA4B1724B4D04D002A6859 /* Features */,
 				6AEA4B0224B4CC7D002A6859 /* Info.plist */,
+				6AEA4C1124B73FD0002A6859 /* main.swift */,
 			);
 			path = TODOApp;
 			sourceTree = "<group>";
@@ -93,10 +234,448 @@
 		6AEA4B0A24B4CC7E002A6859 /* TODOAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				6AEA4B0B24B4CC7E002A6859 /* TODOAppTests.swift */,
+				6AEA4C0A24B73F87002A6859 /* TestSetup */,
+				6AEA4C3124B76C57002A6859 /* Core */,
+				6AEA4BF024B72995002A6859 /* Mocks */,
+				6AEA4BE524B717B6002A6859 /* Helpers */,
+				6AEA4BDE24B71757002A6859 /* Features */,
 				6AEA4B0D24B4CC7E002A6859 /* Info.plist */,
 			);
 			path = TODOAppTests;
+			sourceTree = "<group>";
+		};
+		6AEA4B1624B4CD30002A6859 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				6AEA4BCB24B70798002A6859 /* Mapper */,
+				6AEA4B4124B4E979002A6859 /* Constants */,
+				6AEA4B3824B4E92C002A6859 /* Helpers */,
+				6AEA4B2824B4E8B0002A6859 /* Services */,
+				6AEA4B1A24B4D063002A6859 /* Coordinator */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		6AEA4B1724B4D04D002A6859 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				6AEA4B1E24B4D09B002A6859 /* TODO */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		6AEA4B1A24B4D063002A6859 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				6AEA4B1824B4D05F002A6859 /* Coordinator.swift */,
+				6AEA4B1B24B4D06F002A6859 /* Presentable.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		6AEA4B1D24B4D08D002A6859 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				6AEA4AF424B4CC7C002A6859 /* AppDelegate.swift */,
+				6AEA4AF624B4CC7C002A6859 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		6AEA4B1E24B4D09B002A6859 /* TODO */ = {
+			isa = PBXGroup;
+			children = (
+				6AEA4B4B24B4EE8D002A6859 /* Data */,
+				6AEA4B4824B4EE66002A6859 /* Domain */,
+				6AEA4B1F24B4D0A1002A6859 /* UI */,
+			);
+			path = TODO;
+			sourceTree = "<group>";
+		};
+		6AEA4B1F24B4D0A1002A6859 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				6AEA4B4624B4EA04002A6859 /* Coordinators */,
+				6AEA4B4424B4E9E7002A6859 /* ViewControllers */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		6AEA4B2824B4E8B0002A6859 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6AEA4B2924B4E8BC002A6859 /* NetworkService.swift */,
+				6AEA4B2B24B4E8CA002A6859 /* APIRequest.swift */,
+				6AEA4B2D24B4E8D8002A6859 /* NetworkError.swift */,
+				6AEA4B2F24B4E8E8002A6859 /* HTTPMethod.swift */,
+				6AEA4B3324B4E903002A6859 /* APIManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		6AEA4B3824B4E92C002A6859 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6AEA4C1524B75EBF002A6859 /* AnyPublisher+Helpers.swift */,
+				6AEA4B3B24B4E949002A6859 /* BindableUI.swift */,
+				6AEA4B3924B4E93A002A6859 /* MappableViewModel.swift */,
+				6AEA4B8C24B5DE13002A6859 /* NibLoader.swift */,
+				6AEA4B3D24B4E958002A6859 /* UITableView+Helpers.swift */,
+				6AEA4B3F24B4E965002A6859 /* UIView+Helpers.swift */,
+				6AEA4C3424B78507002A6859 /* UIViewController+Helpers.swift */,
+				6AEA4B3124B4E8F6002A6859 /* URLRequest+BuildHelpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		6AEA4B4124B4E979002A6859 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				6AEA4B4224B4E982002A6859 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		6AEA4B4424B4E9E7002A6859 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6AEA4B9924B5E3C9002A6859 /* UserList */,
+				6AEA4B6B24B5DB3D002A6859 /* TODOListController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6AEA4B4624B4EA04002A6859 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				6AEA4B9A24B5E3D5002A6859 /* UserListCoordinator.swift */,
+				6AEA4B7424B5DB6B002A6859 /* TODOListCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		6AEA4B4824B4EE66002A6859 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				6AEA4B6324B5B07E002A6859 /* Usecases */,
+				6AEA4B6224B5B073002A6859 /* Repository */,
+				6AEA4B4C24B4EE9D002A6859 /* Model */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		6AEA4B4B24B4EE8D002A6859 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				6AEA4BCE24B707B6002A6859 /* Mapper */,
+				6AEA4BC824B67143002A6859 /* Model */,
+				6AEA4BC524B6712B002A6859 /* API */,
+				6AEA4B5524B4EFA2002A6859 /* Requests */,
+				6AEA4B5224B4EF62002A6859 /* Repository */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		6AEA4B4C24B4EE9D002A6859 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6AEA4B7F24B5DB8B002A6859 /* TODO.swift */,
+				6AEA4BA324B5E461002A6859 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6AEA4B5224B4EF62002A6859 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				6AEA4B8324B5DC29002A6859 /* TODOWebRepository.swift */,
+				6AEA4BAB24B5E51A002A6859 /* UsersWebRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		6AEA4B5524B4EFA2002A6859 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				6AEA4B8524B5DC5A002A6859 /* TODORequest.swift */,
+				6AEA4BA924B5E4F0002A6859 /* UsersRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		6AEA4B6224B5B073002A6859 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				6AEA4B7D24B5DB85002A6859 /* TODORepository.swift */,
+				6AEA4BA524B5E491002A6859 /* UserRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		6AEA4B6324B5B07E002A6859 /* Usecases */ = {
+			isa = PBXGroup;
+			children = (
+				6AEA4B8124B5DBDC002A6859 /* GetTODOUseCase.swift */,
+				6AEA4BA724B5E4AA002A6859 /* GetUsersUseCase.swift */,
+			);
+			path = Usecases;
+			sourceTree = "<group>";
+		};
+		6AEA4B6B24B5DB3D002A6859 /* TODOListController */ = {
+			isa = PBXGroup;
+			children = (
+				6AEA4BBE24B60D5A002A6859 /* TableCell */,
+				6AEA4B7C24B5DB76002A6859 /* ViewModel */,
+				6AEA4B7524B5DB6B002A6859 /* TODOListViewController.swift */,
+				6AEA4B7724B5DB6B002A6859 /* TODOListViewController.xib */,
+			);
+			path = TODOListController;
+			sourceTree = "<group>";
+		};
+		6AEA4B7C24B5DB76002A6859 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6AEA4B7624B5DB6B002A6859 /* TODOListViewModel.swift */,
+				6AEA4BC324B60D7A002A6859 /* TODOCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6AEA4B9924B5E3C9002A6859 /* UserList */ = {
+			isa = PBXGroup;
+			children = (
+				6AEA4BAF24B5E7B6002A6859 /* TableCell */,
+				6AEA4BA224B5E3E1002A6859 /* ViewModel */,
+				6AEA4B9B24B5E3D5002A6859 /* UserListViewController.swift */,
+				6AEA4B9D24B5E3D5002A6859 /* UserListViewController.xib */,
+			);
+			path = UserList;
+			sourceTree = "<group>";
+		};
+		6AEA4BA224B5E3E1002A6859 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6AEA4B9C24B5E3D5002A6859 /* UserListViewModel.swift */,
+				6AEA4BAD24B5E6A8002A6859 /* UserCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6AEA4BAF24B5E7B6002A6859 /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				6AEA4BB024B5EE80002A6859 /* UserTableViewCell.swift */,
+				6AEA4BB124B5EE80002A6859 /* UserTableViewCell.xib */,
+			);
+			path = TableCell;
+			sourceTree = "<group>";
+		};
+		6AEA4BBE24B60D5A002A6859 /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				6AEA4BBF24B60D67002A6859 /* TODOTableViewCell.swift */,
+				6AEA4BC024B60D67002A6859 /* TODOTableViewCell.xib */,
+			);
+			path = TableCell;
+			sourceTree = "<group>";
+		};
+		6AEA4BC524B6712B002A6859 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				6AEA4BC624B6713C002A6859 /* TODOAPI.swift */,
+				6AEA4BD324B70D5D002A6859 /* UserAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		6AEA4BC824B67143002A6859 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6AEA4BC924B6714F002A6859 /* TODODTO.swift */,
+				6AEA4BD124B70A46002A6859 /* UserDTO.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6AEA4BCB24B70798002A6859 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				6AEA4BCC24B7079E002A6859 /* Mapper.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		6AEA4BCE24B707B6002A6859 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				6AEA4BCF24B707BF002A6859 /* TODOMapper.swift */,
+				6AEA4BD524B70DD3002A6859 /* UserMapper.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		6AEA4BDE24B71757002A6859 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				6AEA4BFD24B72DCF002A6859 /* Data */,
+				6AEA4BFC24B72DC9002A6859 /* UI */,
+				6AEA4BDF24B7175B002A6859 /* Domain */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		6AEA4BDF24B7175B002A6859 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				6AEA4BE024B71762002A6859 /* Usecases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		6AEA4BE024B71762002A6859 /* Usecases */ = {
+			isa = PBXGroup;
+			children = (
+				6AEA4BE324B7177B002A6859 /* GetUsersUseCaseSpec.swift */,
+				6AEA4BEA24B720B1002A6859 /* GetTODOUseCaseSpec.swift */,
+			);
+			path = Usecases;
+			sourceTree = "<group>";
+		};
+		6AEA4BE124B71766002A6859 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				6AEA4BEE24B728E5002A6859 /* TODOWebRepositorySpec.swift */,
+				6AEA4BF724B72B09002A6859 /* UserWebRepositorySpec.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		6AEA4BE524B717B6002A6859 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6AEA4BE624B717BF002A6859 /* ModelFactory.swift */,
+				6AEA4BEC24B726E2002A6859 /* CurrentValueSubject+Helpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		6AEA4BF024B72995002A6859 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				6AEA4BE824B71A2D002A6859 /* MockTODORepository.swift */,
+				6AEA4BF124B729A0002A6859 /* MockUsersRepository.swift */,
+				6AEA4BF324B729C5002A6859 /* MockTODOAPI.swift */,
+				6AEA4BF524B72A0E002A6859 /* MockUserAPI.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		6AEA4BFC24B72DC9002A6859 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				6AEA4C2A24B76A9D002A6859 /* Coordinators */,
+				6AEA4C0624B7357D002A6859 /* ViewControllers */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		6AEA4BFD24B72DCF002A6859 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				6AEA4BE124B71766002A6859 /* Repository */,
+				6AEA4BFE24B72DD9002A6859 /* Mapper */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		6AEA4BFE24B72DD9002A6859 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				6AEA4BFF24B72DE3002A6859 /* TODOMapperSpec.swift */,
+				6AEA4C0124B72DEB002A6859 /* UserMapperSpec.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		6AEA4C0624B7357D002A6859 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6AEA4C1C24B762AC002A6859 /* TODOListController */,
+				6AEA4C1724B760FB002A6859 /* UserList */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6AEA4C0724B73585002A6859 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6AEA4C0824B73596002A6859 /* UserListViewModelSpec.swift */,
+				6AEA4C2224B765A1002A6859 /* UserCellViewModelSpec.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6AEA4C0A24B73F87002A6859 /* TestSetup */ = {
+			isa = PBXGroup;
+			children = (
+				6AEA4C0B24B73F96002A6859 /* TestingAppDelegate.swift */,
+				6AEA4C0D24B73FA1002A6859 /* TestingRootViewController.swift */,
+				6AEA4C0F24B73FAE002A6859 /* TestingSceneDelegate.swift */,
+			);
+			path = TestSetup;
+			sourceTree = "<group>";
+		};
+		6AEA4C1324B74EAB002A6859 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6AEA4AFF24B4CC7D002A6859 /* LaunchScreen.storyboard */,
+				6AEA4AFD24B4CC7D002A6859 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6AEA4C1724B760FB002A6859 /* UserList */ = {
+			isa = PBXGroup;
+			children = (
+				6AEA4C0724B73585002A6859 /* ViewModel */,
+				6AEA4C2424B7661A002A6859 /* UserListViewControllerSpec.swift */,
+			);
+			path = UserList;
+			sourceTree = "<group>";
+		};
+		6AEA4C1C24B762AC002A6859 /* TODOListController */ = {
+			isa = PBXGroup;
+			children = (
+				6AEA4C1D24B762B4002A6859 /* ViewModel */,
+				6AEA4C2824B769D8002A6859 /* TODOListViewControllerSpec.swift */,
+			);
+			path = TODOListController;
+			sourceTree = "<group>";
+		};
+		6AEA4C1D24B762B4002A6859 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6AEA4C1E24B762C6002A6859 /* TODOListViewModelSpec.swift */,
+				6AEA4C2024B76422002A6859 /* TODOCellViewModelSpec.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6AEA4C2A24B76A9D002A6859 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				6AEA4C2D24B76B8D002A6859 /* UserListCoordinatorSpec.swift */,
+				6AEA4C2F24B76BE1002A6859 /* TODOListCoordinatorSpec.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		6AEA4C3124B76C57002A6859 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				6AEA4C3224B76C60002A6859 /* NetworkErrorSpec.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,6 +712,10 @@
 				6AEA4B0924B4CC7E002A6859 /* PBXTargetDependency */,
 			);
 			name = TODOAppTests;
+			packageProductDependencies = (
+				6AEA4BD824B716FA002A6859 /* Nimble */,
+				6AEA4BDB24B71716002A6859 /* Quick */,
+			);
 			productName = TODOAppTests;
 			productReference = 6AEA4B0724B4CC7E002A6859 /* TODOAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -152,6 +735,7 @@
 					};
 					6AEA4B0624B4CC7E002A6859 = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 						TestTargetID = 6AEA4AF024B4CC7C002A6859;
 					};
 				};
@@ -165,6 +749,10 @@
 				Base,
 			);
 			mainGroup = 6AEA4AE824B4CC7C002A6859;
+			packageReferences = (
+				6AEA4BD724B716FA002A6859 /* XCRemoteSwiftPackageReference "Nimble" */,
+				6AEA4BDA24B71716002A6859 /* XCRemoteSwiftPackageReference "Quick" */,
+			);
 			productRefGroup = 6AEA4AF224B4CC7C002A6859 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -180,9 +768,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AEA4BC224B60D67002A6859 /* TODOTableViewCell.xib in Resources */,
 				6AEA4B0124B4CC7D002A6859 /* LaunchScreen.storyboard in Resources */,
 				6AEA4AFE24B4CC7D002A6859 /* Assets.xcassets in Resources */,
-				6AEA4AFC24B4CC7C002A6859 /* Main.storyboard in Resources */,
+				6AEA4BA124B5E3D5002A6859 /* UserListViewController.xib in Resources */,
+				6AEA4B7B24B5DB6B002A6859 /* TODOListViewController.xib in Resources */,
+				6AEA4BB324B5EE80002A6859 /* UserTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,9 +791,52 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AEA4AF924B4CC7C002A6859 /* ViewController.swift in Sources */,
+				6AEA4BC424B60D7A002A6859 /* TODOCellViewModel.swift in Sources */,
+				6AEA4B8624B5DC5A002A6859 /* TODORequest.swift in Sources */,
 				6AEA4AF524B4CC7C002A6859 /* AppDelegate.swift in Sources */,
+				6AEA4BAC24B5E51A002A6859 /* UsersWebRepository.swift in Sources */,
+				6AEA4B4324B4E982002A6859 /* Constants.swift in Sources */,
+				6AEA4C3524B78507002A6859 /* UIViewController+Helpers.swift in Sources */,
+				6AEA4B7E24B5DB85002A6859 /* TODORepository.swift in Sources */,
+				6AEA4BAE24B5E6A9002A6859 /* UserCellViewModel.swift in Sources */,
+				6AEA4BD424B70D5D002A6859 /* UserAPI.swift in Sources */,
+				6AEA4B3A24B4E93A002A6859 /* MappableViewModel.swift in Sources */,
+				6AEA4BCD24B7079E002A6859 /* Mapper.swift in Sources */,
+				6AEA4B4024B4E965002A6859 /* UIView+Helpers.swift in Sources */,
+				6AEA4BB224B5EE80002A6859 /* UserTableViewCell.swift in Sources */,
+				6AEA4B7A24B5DB6B002A6859 /* TODOListViewModel.swift in Sources */,
+				6AEA4C1224B73FD0002A6859 /* main.swift in Sources */,
+				6AEA4B9E24B5E3D5002A6859 /* UserListCoordinator.swift in Sources */,
+				6AEA4BD024B707BF002A6859 /* TODOMapper.swift in Sources */,
+				6AEA4B2A24B4E8BC002A6859 /* NetworkService.swift in Sources */,
+				6AEA4B3E24B4E958002A6859 /* UITableView+Helpers.swift in Sources */,
+				6AEA4B8224B5DBDC002A6859 /* GetTODOUseCase.swift in Sources */,
+				6AEA4BA824B5E4AA002A6859 /* GetUsersUseCase.swift in Sources */,
+				6AEA4BCA24B6714F002A6859 /* TODODTO.swift in Sources */,
+				6AEA4B3024B4E8E8002A6859 /* HTTPMethod.swift in Sources */,
+				6AEA4B8D24B5DE13002A6859 /* NibLoader.swift in Sources */,
+				6AEA4B1C24B4D06F002A6859 /* Presentable.swift in Sources */,
+				6AEA4C1624B75EBF002A6859 /* AnyPublisher+Helpers.swift in Sources */,
+				6AEA4BC124B60D67002A6859 /* TODOTableViewCell.swift in Sources */,
+				6AEA4B7924B5DB6B002A6859 /* TODOListViewController.swift in Sources */,
 				6AEA4AF724B4CC7C002A6859 /* SceneDelegate.swift in Sources */,
+				6AEA4B3C24B4E949002A6859 /* BindableUI.swift in Sources */,
+				6AEA4BA424B5E461002A6859 /* User.swift in Sources */,
+				6AEA4BAA24B5E4F0002A6859 /* UsersRequest.swift in Sources */,
+				6AEA4B2C24B4E8CA002A6859 /* APIRequest.swift in Sources */,
+				6AEA4B1924B4D05F002A6859 /* Coordinator.swift in Sources */,
+				6AEA4BD224B70A46002A6859 /* UserDTO.swift in Sources */,
+				6AEA4BC724B6713C002A6859 /* TODOAPI.swift in Sources */,
+				6AEA4BA024B5E3D5002A6859 /* UserListViewModel.swift in Sources */,
+				6AEA4B9F24B5E3D5002A6859 /* UserListViewController.swift in Sources */,
+				6AEA4BA624B5E491002A6859 /* UserRepository.swift in Sources */,
+				6AEA4B8024B5DB8B002A6859 /* TODO.swift in Sources */,
+				6AEA4BD624B70DD3002A6859 /* UserMapper.swift in Sources */,
+				6AEA4B3424B4E903002A6859 /* APIManager.swift in Sources */,
+				6AEA4B8424B5DC29002A6859 /* TODOWebRepository.swift in Sources */,
+				6AEA4B3224B4E8F6002A6859 /* URLRequest+BuildHelpers.swift in Sources */,
+				6AEA4B7824B5DB6B002A6859 /* TODOListCoordinator.swift in Sources */,
+				6AEA4B2E24B4E8D8002A6859 /* NetworkError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,7 +844,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AEA4B0C24B4CC7E002A6859 /* TODOAppTests.swift in Sources */,
+				6AEA4C2324B765A1002A6859 /* UserCellViewModelSpec.swift in Sources */,
+				6AEA4BED24B726E2002A6859 /* CurrentValueSubject+Helpers.swift in Sources */,
+				6AEA4BE724B717BF002A6859 /* ModelFactory.swift in Sources */,
+				6AEA4C0224B72DEB002A6859 /* UserMapperSpec.swift in Sources */,
+				6AEA4C2524B7661A002A6859 /* UserListViewControllerSpec.swift in Sources */,
+				6AEA4BF824B72B09002A6859 /* UserWebRepositorySpec.swift in Sources */,
+				6AEA4C2E24B76B8D002A6859 /* UserListCoordinatorSpec.swift in Sources */,
+				6AEA4C0924B73596002A6859 /* UserListViewModelSpec.swift in Sources */,
+				6AEA4C3324B76C60002A6859 /* NetworkErrorSpec.swift in Sources */,
+				6AEA4C2924B769D8002A6859 /* TODOListViewControllerSpec.swift in Sources */,
+				6AEA4BF224B729A0002A6859 /* MockUsersRepository.swift in Sources */,
+				6AEA4C1F24B762C6002A6859 /* TODOListViewModelSpec.swift in Sources */,
+				6AEA4C0024B72DE3002A6859 /* TODOMapperSpec.swift in Sources */,
+				6AEA4C2124B76422002A6859 /* TODOCellViewModelSpec.swift in Sources */,
+				6AEA4C0C24B73F96002A6859 /* TestingAppDelegate.swift in Sources */,
+				6AEA4C0E24B73FA1002A6859 /* TestingRootViewController.swift in Sources */,
+				6AEA4BEB24B720B1002A6859 /* GetTODOUseCaseSpec.swift in Sources */,
+				6AEA4BF624B72A0E002A6859 /* MockUserAPI.swift in Sources */,
+				6AEA4BE424B7177B002A6859 /* GetUsersUseCaseSpec.swift in Sources */,
+				6AEA4C1024B73FAE002A6859 /* TestingSceneDelegate.swift in Sources */,
+				6AEA4BE924B71A2D002A6859 /* MockTODORepository.swift in Sources */,
+				6AEA4BF424B729C5002A6859 /* MockTODOAPI.swift in Sources */,
+				6AEA4BEF24B728E5002A6859 /* TODOWebRepositorySpec.swift in Sources */,
+				6AEA4C3024B76BE1002A6859 /* TODOListCoordinatorSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,14 +882,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6AEA4AFA24B4CC7C002A6859 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6AEA4AFB24B4CC7C002A6859 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6AEA4AFF24B4CC7D002A6859 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -397,6 +1046,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TODOAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
@@ -407,6 +1057,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = fundingcircle.TODOAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TODOApp.app/TODOApp";
@@ -418,6 +1069,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TODOAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
@@ -465,6 +1117,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6AEA4BD724B716FA002A6859 /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.1.1;
+			};
+		};
+		6AEA4BDA24B71716002A6859 /* XCRemoteSwiftPackageReference "Quick" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Quick";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6AEA4BD824B716FA002A6859 /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6AEA4BD724B716FA002A6859 /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+		6AEA4BDB24B71716002A6859 /* Quick */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6AEA4BDA24B71716002A6859 /* XCRemoteSwiftPackageReference "Quick" */;
+			productName = Quick;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6AEA4AE924B4CC7C002A6859 /* Project object */;
 }
